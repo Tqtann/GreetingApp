@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
-using System.Drawing;
 
 namespace GreetingApp
 {
@@ -29,6 +29,13 @@ namespace GreetingApp
             {
                 MessageBox.Show("Hello, " + textBox1.Text + "!");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.Text = "";
+            textBox1.Focus();
         }
     }
 }
